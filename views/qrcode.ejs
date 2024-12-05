@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+        <style type="text/tailwindcss">
+            @layer utilities {
+              .content-auto {
+                content-visibility: auto;
+              }
+            }
+          </style>
+          <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>QRCode</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+</head>
+<body>
+        <div class="bg-[url('bg-purple.png')] bg-cover bg-center backdrop-blur-lg h-screen overflow-hidden w-full">
+            <div class="bg-[url('bg-purple.png')] min-h-screen flex items-center justify-center p-8">
+            <div class="bg-[rgba(178,33,246,0)]/30 backdrop-blur-md gap-10 rounded-xl items-center flex justify-between border border-[rgba(178,33,246,0.5)]/20 shadow-lg p-6 min-h-[300px] max-w-sm">
+              <div>
+                <img src="<%= converturl %>" alt="">
+                <button class="text-white bg-[#6B3C90] px-4 py-2 rounded-full mt-5">Download</button>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+   
+    
+
+</body>
+</html>
